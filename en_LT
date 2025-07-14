@@ -1,0 +1,137 @@
+comment_char %
+escape_char /
+
+% Mashup of en_US and lt_LT according to my own preferences
+%
+% Changes to en_US:
+% 1.) Monday is set as first day of the week
+% 2.) lt_LT date format
+% 3.) Replaced USD with EUR
+% 4.) lt_LT paper rules
+% 5.) lt_LT address rules
+% 6.) lt_LT telephone rules
+% 7.) lt_LT measurement rules
+
+LC_IDENTIFICATION
+title      "English locale for Lithuania"
+source     "Aleksejus Kononovicius"
+address    "https:////kononovicius.lt//"
+contact    ""
+email      ""
+tel        ""
+fax        ""
+language   "Lihuanian"
+territory  "Lithuania"
+revision   "1.0"
+date       "2025-07-14"
+
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
+category "i18n:2012";LC_MEASUREMENT
+END LC_IDENTIFICATION
+
+LC_COLLATE
+copy "en_US"
+END LC_COLLATE
+
+LC_CTYPE
+copy "en_US"
+END LC_CTYPE
+
+LC_MONETARY
+% copy "en_US"
+mon_decimal_point   "."
+mon_thousands_sep   ","
+mon_grouping        3
+positive_sign       ""
+negative_sign       "-"
+int_frac_digits     2
+frac_digits         2
+p_cs_precedes       1
+int_p_sep_by_space  1
+p_sep_by_space      0
+n_cs_precedes       1
+int_n_sep_by_space  1
+n_sep_by_space      0
+p_sign_posn         1
+n_sign_posn         1
+% end copy from "en_US"
+int_curr_symbol "EUR "
+currency_symbol "€"
+END LC_MONETARY
+
+LC_NUMERIC
+copy "en_US"
+END LC_NUMERIC
+
+LC_TIME
+% copy from en_US
+abday	"Sun";"Mon";"Tue";"Wed";"Thu";"Fri";"Sat"
+day	"Sunday";/
+	"Monday";/
+	"Tuesday";/
+	"Wednesday";/
+	"Thursday";/
+	"Friday";/
+	"Saturday"
+week 7;19971130;1
+abmon	"Jan";"Feb";/
+	"Mar";"Apr";/
+	"May";"Jun";/
+	"Jul";"Aug";/
+	"Sep";"Oct";/
+	"Nov";"Dec"
+mon	"January";/
+	"February";/
+	"March";/
+	"April";/
+	"May";/
+	"June";/
+	"July";/
+	"August";/
+	"September";/
+	"October";/
+	"November";/
+	"December"
+d_t_fmt "%a %d %b %Y %r %Z"
+t_fmt_ampm "%I:%M:%S %p"
+date_fmt "%a %b %e %r %Z %Y"
+am_pm	"AM";"PM"
+% end copy from en_US
+d_fmt         "%Y-%m-%d"
+t_fmt         "%T"
+first_weekday 2
+END LC_TIME
+
+LC_MESSAGES
+copy "en_US"
+END LC_MESSAGES
+
+LC_PAPER
+copy "lt_LT"
+END LC_PAPER
+
+LC_TELEPHONE
+copy "lt_LT"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+copy "lt_LT"
+END LC_MEASUREMENT
+
+LC_NAME
+copy "en_US"
+END LC_NAME
+
+LC_ADDRESS
+copy "lt_LT"
+END LC_ADDRESS
