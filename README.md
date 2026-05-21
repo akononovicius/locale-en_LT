@@ -30,6 +30,23 @@ en_US.UTF-8/Compose		en_LT.UTF-8
 
 This way `en_LT` will just reuse `en_US` compose file.
 
+## Alternative solution
+
+Instead of creating custom local, you could modify contents of your `/etc/locale.conf` file. See the example below, which should give a reasonable approximation possibly suitable for Lithuanian users prefering some US English defaults.
+
+```
+LANG="en_US.UTF-8"
+
+LC_TIME="en_DK.UTF-8"
+LC_MONETARY="en_IE.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+
+LC_PAPER="lt_LT.UTF-8"
+LC_TELEPHONE="lt_LT.UTF-8"
+LC_MEASUREMENT="lt_LT.UTF-8"
+LC_ADDRESS="lt_LT.UTF-8"
+```
+
 ## License
 
 Consider this locale to be licensed under the same license as `glibc`
